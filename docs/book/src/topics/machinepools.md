@@ -29,7 +29,7 @@ The template used for this [flavor](https://cluster-api.sigs.k8s.io/clusterctl/c
 
 Cluster API Provider AWS (CAPA) has experimental support for [EKS Managed Node Groups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) using `MachinePool` through the infrastructure type `AWSManagedMachinePool`. An `AWSManagedMachinePool` corresponds to an [AWS AutoScaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) that is used for an EKS managed node group. .
 
-The AWSManagedMachinePool controller creates and manages an EKS managed node group with in turn manages an AWS AutoScaling Group of managed EC2 instance types.
+The AWSManagedMachinePool controller creates and manages an EKS managed node group which in turn manages an AWS AutoScaling Group of managed EC2 instance types.
 
 To use the managed machine pools certain IAM permissions are needed. The easiest way to ensure the required IAM permissions are in place is to use `clusterawsadm` to create them. To do this, follow the EKS instructions in [using clusterawsadm to fulfill prerequisites](using-clusterawsadm-to-fulfill-prerequisites.md).
 
